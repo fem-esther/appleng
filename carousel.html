@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body {
+            width: 100%;
+            height: 120vh;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #upperh1 {
+            font-size: 3rem !important;
+        }
+
+        .uppertext {
+            width: 60%;
+            text-align: center;
+        }
+
+        .uppertext p {
+            margin-top: 30px;
+        }
+
+        .Slides {
+            width: 50%;
+            height: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* background-color: orange; */
+        }
+
+        .buildings {
+            margin-top: 50px;
+        }
+
+        .buttonp {
+            width: 50%;
+            /* background-color: red; */
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .buttonp .btnp {
+            padding: 20px;
+            /* background-color: teal; */
+        }
+
+        .slides {
+            transition: 1s ease-in-out;
+            opacity: 0;
+            border-bottom: 1px solid rgb(207, 186, 186);
+            padding-bottom: 60px;
+            margin-bottom: 70px;
+        }
+
+        .slides:nth-child(1) {
+            opacity: 1;
+        }
+
+        .slides:nth-child(1) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* background-color: aliceblue; */
+        }
+
+        .slides:nth-child(2) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* background-color: palegreen; */
+        }
+
+        .slides:nth-child(3) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* background-color: palevioletred; */
+        }
+
+        .slides:nth-child(4) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* background-color: peru; */
+        }
+
+        .slides:nth-child(5) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* background-color: purple; */
+        }
+
+
+        .slides {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .fullbody {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+            height: 100vh;
+        }
+
+        .logic {
+            padding-top: 30px;
+        }
+
+        .arcade {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="body">
+        <div class="uppertext">
+            <h4 id="upperh1">Pro Apps</h4>
+            <p>For professionals ready to push their creativity, these industry-leading apps offer
+                maximum control over editing,
+                processing, and output of music and film.</p>
+        </div>
+        <div class="fullbody">
+            <div class="buttonp">
+                <div index="0" class="btnp">
+                    <img class="imgs" src="./img/safari.jpg" alt="">
+                    <p>Safari</p>
+                </div>
+                <div index="1" class="btnp">
+                    <img src="./img/photos.jpg" class="imgs" alt="">
+                    <p>Photos</p>
+                </div>
+                <div index="2" class="btnp">
+                    <img src="./img/imovie.jpg" class="imgs" alt="">
+                    <p>iMovie</p>
+                </div>
+                <div index="3" class="btnp">
+                    <img src="./img/garageband.jpg" class="imgs" alt="">
+                    <p>Garageband</p>
+                </div>
+                <div index="4" class="btnp">
+                    <img src="./img/pages.jpg" class="imgs" alt="">
+                    <p>Pages</p>
+                </div>
+            </div>
+            <div class="Slides">
+                <div index="0" class="slides">
+                    <p>Safari has innovative features that let you enjoy more of the web. In even more ways.
+                        Built-in
+                        privacy features help
+                        protect your information and keep your Mac secure. An updated start page helps you
+                        easily
+                        and
+                        quickly save, find, and
+                        share your favorite sites. And Siri suggestions surface bookmarks, links from your
+                        reading
+                        list,
+                        iCloud Tabs, links you
+                        receive in Messages, and more</p>
+                    <div class="buildings">
+                        <img src="./img/building__1_-removebg-preview.png" alt="">
+                    </div>
+                </div>
+                <div index="1" class="slides">
+                    <p>Keep your growing library organized and accessible. Perfect your images and create
+                        beautiful
+                        gifts for sharing. And with
+                        iCloud Photos, you can store a lifetime’s worth of photos and videos in the cloud.
+                    </p>
+                    <div class="buildings">
+                        <img src="./img/photoscreen-removebg-preview.png" alt="">
+                    </div>
+                </div>
+                <div index="2" class="slides">
+                    <p>Tell stories like never before. A simple design and intuitive editing features make it
+                        easy
+                        to create beautiful 4K
+                        movies and Hollywood-style trailers.
+                    </p>
+                    <div class="buildings">
+                        <img src="./img/imoviescreen-removebg-preview.png" alt="">
+                    </div>
+                    <div class="learnmore"><a href=""> Learn more about iMovie &gt;</a></div>
+                </div>
+                <div index="3" class="slides">
+                    <p>The easiest way to create great-sounding songs on your Mac. With an intuitive interface
+                        and
+                        access to a complete sound
+                        library, it’s never been easier to learn, play, record, and share music like a pro.
+                    </p>
+                    <div class="buildings">
+                        <img src="./img/garagebandscreen-removebg-preview.png" alt="">
+                    </div>
+                    <div class="learnmore"><a href=""> Learn more about Garageband &gt;</a></div>
+                </div>
+                <div index="4" class="slides">
+                    <p>This powerful word processor gives you everything you need to create documents that look
+                        beautiful. And read
+                        beautifully. It lets you work seamlessly between Mac, iOS, and iPadOS devices. And work
+                        effortlessly with people who use
+                        Microsoft Word.</p>
+                    <div class="buildings">
+                        <img src="./img/pagescreen-removebg-preview.png" alt="">
+                    </div>
+                    <div class="learnmore"><a href=""> Learn more about Pages &gt;</a></div>
+                </div>
+            </div>
+            <div class="buttonp hide">
+                <div index="0" class="btnp"></div>
+                <div index="1" class="btnp"></div>
+                <div index="2" class="btnp"></div>
+                <div index="3" class="btnp"></div>
+                <div index="4" class="btnp"></div>
+            </div>
+        </div>
+        <div class="arcade">
+            <img src="./img/editorial.png" alt="">
+            <div class="arcadetext">
+                <p>The Mac App Store features rich editorial content and great apps for Mac. <span><a href="">Explore
+                            <br> the
+                            Mac App Store</a></span></p>
+
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const btns = document.querySelectorAll(".imgs");
+    const slides = document.querySelectorAll(".slides")
+    let indp = 0;
+    let bool = true;
+
+    btns.forEach((val, indp) => {
+        val.addEventListener("click", (e) => {
+            const indexp = e.target.parentNode.attributes[0].value
+            // console.log(index);
+            // val.style.backgroundColor = "#86868b"
+
+            animeDiv(indexp)
+        })
+    })
+
+    setInterval(() => {
+
+        indp++;
+        indp === 5 && (indp = 0);
+        animeDiv(indp);
+
+        console.log(ind);
+    }, 1000);
+
+    function animeDiv(indexp) {
+        slides.forEach(val => {
+            val.style.opacity = "0"
+        })
+
+        slides[indexp].style.opacity = "1"
+    }
+    // const btn = document.querySelectorAll(".imgs");
+    // const slide = document.querySelectorAll(".slides")
+    // let ind = 0;
+    // let bools = true;
+
+    // btn.forEach((val, ind) => {
+    //     val.addEventListener("click", (e) => {
+    //         const index = e.target.parentNode.attributes[0].value
+    //         console.log(index);
+
+    //         animDiv(index)
+    //     })
+    // })
+
+    // setInterval(() => {
+
+    //     ind++;
+    //     ind === 5 && (ind = 0);
+    //     animDiv(ind);
+
+    //     console.log(ind);
+    // }, 3000);
+
+    // function animDiv(index) {
+    //     slide.forEach(val => {
+    //         val.style.opacity = "0"
+    //     })
+
+    //     slides[index].style.opacity = "1"
+    // }
+</script>
+
+</html>
